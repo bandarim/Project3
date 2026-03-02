@@ -1,0 +1,22 @@
+# Load Balancer Configuration
+
+# Simulation
+arrivalChance=0.30
+arrivalsPerCycleMax=3
+minJobTime=2
+maxJobTime=25
+
+# Autoscaling
+scaleLowFactor=50
+scaleHighFactor=80
+coolDown=25
+
+# Logging 
+logIncrement=100
+logFile=log.txt
+
+# Firewall 
+# Block private network ranges
+blockedRange=10.0.0.0-10.255.255.255
+blockedRange=192.168.0.0-192.168.255.255
+blockedRange=172.16.0.0-172.31.255.255
